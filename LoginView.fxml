@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController" stylesheets = "@style.css">
+    <TextField fx:id="usernameField" promptText="Enter username"/>
+    <PasswordField fx:id="passwordField" promptText="Enter password"/>
+    <Button text="Login" onAction="#handleLogin"/>
+</VBox>

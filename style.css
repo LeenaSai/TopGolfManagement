@@ -1,0 +1,84 @@
+/* General Styling for the Root Container (VBox) */
+VBox {
+    -fx-alignment: center;
+    -fx-padding: 30;
+    -fx-spacing: 20;
+    -fx-background-color: linear-gradient(to bottom, #34b3a0, #00a78e); /* Gradient background */
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 1, 0, 3);
+    -fx-pref-width: 400px; /* Make the login box more compact */
+    -fx-pref-height: 400px;
+}
+
+/* Styling for the TextField (Username) */
+#usernameField {
+    -fx-pref-width: 300px;
+    -fx-padding: 12px;
+    -fx-background-color: #ffffff;
+    -fx-background-insets: 0, 1;
+    -fx-border-color: #1e8c7c; /* Slightly darker shade of the background color */
+    -fx-border-radius: 25px;
+    -fx-font-size: 16px;
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-text-fill: #333;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 8, 1, 0, 3);
+}
+
+/* Styling for the PasswordField */
+#passwordField {
+    -fx-pref-width: 300px;
+    -fx-padding: 12px;
+    -fx-background-color: #ffffff;
+    -fx-background-insets: 0, 1;
+    -fx-border-color: #1e8c7c;
+    -fx-border-radius: 25px;
+    -fx-font-size: 16px;
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-text-fill: #333;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 8, 1, 0, 3);
+}
+
+/* Style for Login Button */
+#loginButton {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 45px;
+    -fx-background-color: #1e8c7c; /* Accent color matching the border of text fields */
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-border-radius: 25px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 1, 0, 3);
+    -fx-transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover Effect for the Login Button */
+#loginButton:hover {
+    -fx-background-color: #157a6b; /* Darker green for hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 1, 0, 5);
+}
+
+/* Focus Effect for TextField and PasswordField */
+#usernameField:focused, #passwordField:focused {
+    -fx-border-color: #3aa2a2; /* Lighter shade of green on focus */
+    -fx-background-color: #f0fafa; /* Slightly lighter background on focus */
+}
+
+/* Styling the Prompt Text */
+TextField, PasswordField {
+    -fx-prompt-text-fill: #aaa; /* Light gray color for prompt text */
+}
+
+/* Label Text Styling */
+.Label {
+    -fx-font-size: 14px;
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-text-fill: #ffffff; /* White text for labels */
+    -fx-font-weight: normal;
+}
+
+/* Enhancements for the Background (Optional) */
+.root {
+    -fx-background-color: #e0f7f3; /* Very light gradient background */
+}

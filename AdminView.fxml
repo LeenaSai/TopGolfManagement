@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.AdminController" stylesheets = "@styles.css">
+    <Button text="Display All Users" onMouseClicked="#displayAllUsers"/>
+    <Button text="Update First Record" onAction="#updateFirstRecord"/>
+    <Button text="Delete Last Record" onAction="#deleteLastRecord"/>
+    <Button text="Display Remaining Records" onAction="#displayRemainingRecords"/>
+    <Button text="Display User Table" onAction="#displayUserTable"/>
+    
+    <TableView fx:id="userTable">
+        <columns>
+            <TableColumn fx:id="usernameColumn" text="Username" />
+            <TableColumn fx:id="passwordColumn" text="Password" />
+            <TableColumn fx:id="roleColumn" text="Role" />
+        </columns>
+    </TableView>
+</VBox>
